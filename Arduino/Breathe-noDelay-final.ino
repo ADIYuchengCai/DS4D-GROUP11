@@ -48,7 +48,7 @@ int           pixelNumber=LED_COUNT;
 
 unsigned long pixelPrevious_1 = 0;    
 unsigned long pixelCurrent_1 = 0;         // Previous Pixel Millis
-int           pixelInterval_1 = 30;       // Pixel Interval (ms)
+int           pixelInterval_1 = 40;       // Pixel Interval (ms)
 int           pixelBrightness_1=0 ;       // Pixel Interval (ms)
 int           record_1=0;
 
@@ -56,32 +56,32 @@ int           record_1=0;
 
 unsigned long pixelPrevious_2 = 0; 
 unsigned long pixelCurrent_2 = 0; // Previous Pixel Millis
-int           pixelInterval_2 = 60;       // Pixel Interval (ms)
+int           pixelInterval_2 = 80;       // Pixel Interval (ms)
 int           pixelBrightness_2=0 ;       // Pixel Interval (ms)
 int           record_2=0;
 
 unsigned long pixelPrevious_3 = 0; 
 unsigned long pixelCurrent_3= 0;            // Previous Pixel Millis
-int           pixelInterval_3 = 90;       // Pixel Interval (ms)
+int           pixelInterval_3 = 200;       // Pixel Interval (ms)
 int           pixelBrightness_3=0;       // Pixel Interval (ms)
 int           record_3=0;
 
 unsigned long pixelPrevious_4 = 0; 
 unsigned long pixelCurrent_4= 0;            // Previous Pixel Millis
-int           pixelInterval_4 = 120;       // Pixel Interval (ms)
+int           pixelInterval_4 = 200;       // Pixel Interval (ms)
 int           pixelBrightness_4=0;       // Pixel Interval (ms)
 int           record_4=0;
 
 
 unsigned long pixelPrevious_5 = 0; 
 unsigned long pixelCurrent_5= 0;            // Previous Pixel Millis
-int           pixelInterval_5 = 150;       // Pixel Interval (ms)
+int           pixelInterval_5 = 210;       // Pixel Interval (ms)
 int           pixelBrightness_5=0;       // Pixel Interval (ms)
 int           record_5=0;
 
 unsigned long pixelPrevious_6 = 0; 
 unsigned long pixelCurrent_6= 0;            // Previous Pixel Millis
-int           pixelInterval_6 = 180;       // Pixel Interval (ms)
+int           pixelInterval_6 = 40;       // Pixel Interval (ms)
 int           pixelBrightness_6=0;       // Pixel Interval (ms)
 int           record_6=0;
 
@@ -127,33 +127,33 @@ void loop() {
   
   if(currentMillis - pixelPrevious_1 >= pixelInterval_1) {        //  Check for expired time
     pixelPrevious_1 = currentMillis;                            //  Run current frame
-    colorWipe1(strip1.Color(255,0,0),pixelInterval_1);
+    colorWipe1(strip1.Color(68,211,10),pixelInterval_1);
     //Serial.print(pixelPrevious_1);
   }
   
    if(currentMillis - pixelPrevious_2 >= pixelInterval_2) {        //  Check for expired time
     pixelPrevious_2 = currentMillis;                            //  Run current frame
-    colorWipe2(strip2.Color(0,255,0),pixelInterval_2);
+    colorWipe2(strip2.Color(68,211,10),pixelInterval_2);
     //Serial.print(pixelPrevious_2);
   }
 
     if(currentMillis - pixelPrevious_3 >= pixelInterval_3) {        //  Check for expired time
     pixelPrevious_3 = currentMillis;                            //  Run current frame
-    colorWipe3(strip3.Color(0,0,255),pixelInterval_3);
+    colorWipe3(strip3.Color(68,211,10),pixelInterval_3);
   }
 
     if(currentMillis - pixelPrevious_4 >= pixelInterval_4) {        //  Check for expired time
     pixelPrevious_4 = currentMillis;                            //  Run current frame
-    colorWipe4(strip4.Color(255,255,0),pixelInterval_4);
+    colorWipe4(strip4.Color(68,211,10),pixelInterval_4);
   } 
     if(currentMillis - pixelPrevious_5 >= pixelInterval_5) {        //  Check for expired time
     pixelPrevious_5 = currentMillis;                            //  Run current frame
-    colorWipe5(strip5.Color(255,0,180),pixelInterval_5);
+    colorWipe5(strip5.Color(255,14,0),pixelInterval_5);
   } 
 
     if(currentMillis - pixelPrevious_6 >= pixelInterval_6) {        //  Check for expired time
     pixelPrevious_6 = currentMillis;                            //  Run current frame
-    colorWipe6(strip6.Color(255,255,255),pixelInterval_6);
+    colorWipe6(strip6.Color(255,14,0),pixelInterval_6);
   } 
 }
 
