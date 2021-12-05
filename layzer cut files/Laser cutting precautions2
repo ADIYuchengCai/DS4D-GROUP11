@@ -1,0 +1,5 @@
+if the line should been cut through, the line color should be pure black, and the strock is 0.01
+if the line should been burnt, the line color should be pure red, and the strock is 0.01
+if you want to burn a pattern, the pattern mode and vector mode should be both on, and the color should be pure red
+
+tips: you can pre-cut first through choosing the sitimulate mode and it won't hurt the board
